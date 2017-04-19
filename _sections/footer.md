@@ -1,6 +1,6 @@
 ---
 title: Footer
-date: '2017-04-19T01:48:18.058+00:00'
+date: 2017-04-19 01:48:18.058000000 Z
 position: 6
 image: img/swircle-ondark.svg
 include: sections/footer.html
