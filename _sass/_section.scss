@@ -1,0 +1,44 @@
+.section {
+  padding: $space-xl $space-lg;
+  &--middle {
+    padding-top: $space-xxl;
+    padding-bottom: ($space-xl * 7);
+    background-color: $bg-mid;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    @media (min-width: 50em) {
+      padding-top: ($space-xxl * 1.75);
+      padding-bottom: ($space-xxl * 1.75);
+    }
+  }
+  @media (min-width: 40em) {
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+  }
+  &--contact {
+    background-color: $primary;
+  }
+  &__container {
+    max-width: 60em;
+    margin: 0 auto;
+    &--small {
+      max-width: 32em;
+    }
+  }
+  &__title {
+    position: relative;
+    // Space out any following paragraphs
+    & + p {
+      margin-top: $space-lg;
+    }
+    // Create the little gold divider
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: ($space-md * -0.7);
+      width: $space-lg;
+      height: 5px;
+      background-color: $primary;
+    }
+  }
+}

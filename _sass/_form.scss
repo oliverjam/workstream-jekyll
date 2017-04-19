@@ -1,0 +1,45 @@
+.form {
+  margin-top: $space-md;
+  & > * + * {
+    // margin-top: $space-sm;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    padding: $space-sm $space-md;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    &:not(:first-child)  {
+      margin-top: $space-sm;
+    }
+  }
+  &__button {
+    display: block;
+    margin-top: $space-lg;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $space-md $space-lg;
+    font-size: 0.75em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $secondary;
+    background-image: linear-gradient(
+      to bottom,
+      lighten($secondary, 5%) 5%,
+      lighten($secondary, 10%),
+      $secondary 99%
+    );
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(
+        to bottom,
+        lighten($secondary, 12%) 5%,
+        lighten($secondary, 17%),
+        lighten($secondary, 2%) 99%
+      );
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{% capture id %}{{ section.id | remove:'/sections/' | downcase }}{% endcapture %}
+<section class="section section--contact" id="{{ id }}">
+  <div class="section__container section__container--small u-center">
+    <h2>{{ section.title }}</h2>
+    {{ section.content }}
+    <form class="form" action="{{ section.email }}" method="POST">
+      <label class="u-vh" for="name">Name</label>
+      <input class="form__input" name="name" id="name" type="text" placeholder="Your name">
+      <label class="u-vh" for="email">Email</label>
+      <input class="form__input" name="_replyto" id="email" type="email" placeholder="Your email">
+      <label class="u-vh" for="message">Message</label>
+      <textarea class="form__input" name="message" id="message" rows="5" placeholder="Your message"></textarea>
+      <button class="form__button" type="send">Send message</button>
+    </form>
+  </div>
+</section>
