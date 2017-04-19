@@ -5,6 +5,7 @@ image:
 video_description: Video of world map with blinking dots all over the world
 include: sections/generic.html
 position: 4
+date: '2017-04-19T01:48:18.058+00:00'
 ---
 Our system is already used by some of the world’s largest retailers and brands. We have over 5,500 users across 72 countries.
 
