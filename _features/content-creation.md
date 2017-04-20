@@ -2,7 +2,7 @@
 title: Auto-content creation.
 date: 2017-04-19 01:48:00 Z
 position: 2
-video_asset: vid/asset-library.mp4
+video_asset: uploads/asset-library.mp4
 video_description: Video of Workstream X asset library
 ---
 

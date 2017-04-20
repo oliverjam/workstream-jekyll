@@ -3,7 +3,7 @@ title: Used by giants.
 date: 2017-04-19 01:48:00 Z
 position: 4
 include: sections/generic.html
-video: vid/map.mp4
+video: uploads/map.mp4
 image: 
 video_description: Video of world map with blinking dots all over the world
 ---
