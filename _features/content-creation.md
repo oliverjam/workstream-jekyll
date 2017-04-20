@@ -2,8 +2,8 @@
 title: Auto-content creation.
 date: 2017-04-19 01:48:00 Z
 position: 2
-video_asset: uploads/asset-library.mp4
 video_alt: Video of Workstream X asset library
+video_asset: "/uploads/auto-artworking.mp4"
 ---
 
 We’ve developed advanced tools to dynamically create artwork and digital content online.
