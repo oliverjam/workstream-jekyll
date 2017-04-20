@@ -1,0 +1,25 @@
+<head>
+  <meta charset="UTF-8">
+  <!-- Set initial viewport width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Site Title -->
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <!-- Site Description -->
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <!-- CSS -->
+  <!-- Inline the styles needed for fast initial load -->
+  <style>
+    {% capture criticalcss %}
+      {% include _critical.scss %}
+    {% endcapture %}
+    {{ criticalcss | scssify }}
+  </style>
+  <!-- Load the rest of the CSS asynchronously with JS -->
+  <link rel="preload" href="main.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Load the rest of the CSS normally if no JS -->
+  <noscript><link rel="stylesheet" href="{{ "main.css" }}"></noscript>
+  <!-- Custom font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  {% seo %}
+</head>

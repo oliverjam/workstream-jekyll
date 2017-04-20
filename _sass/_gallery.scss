@@ -1,0 +1,55 @@
+.gallery {
+  position: relative;
+  &__caption {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin: 0 $space-lg;
+    font-size: 0.875em;
+  }
+  &__input {
+    display: none;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    will-change: opacity;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+  &__container {
+    position: relative;
+    @media (min-width: 40em) {
+      padding-left: $space-xl;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 100%;
+    left: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+    will-change: opacity;
+    @media (min-width: 50em) {
+      top: 50%;
+      left: auto;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  #gallery#{$i}:checked ~ #galleryImages #galleryImg#{$i} {
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 4 {
+  #gallery#{$i}:checked ~ #galleryBody #galleryContent#{$i} {
+    opacity: 1;
+  }
+}

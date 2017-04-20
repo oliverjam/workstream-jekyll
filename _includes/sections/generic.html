@@ -1,0 +1,20 @@
+{% capture id %}{{ section.id | remove:'/sections/' | downcase }}{% endcapture %}
+<section class="section" id="{{ id }}">
+  <div class="section__container">
+    <div class="grid">
+      <div class="grid__item">
+        <h2 class="section__title">{{ section.title }}</h2>
+        {{ section.content }}
+      </div>
+      <div class="grid__item u-center">
+        {% if section.video != null %}
+          <video src="{{ section.video }}" autoplay muted loop  id="mapVid"></video>
+          <label class="u-vh" for="mapVid">Video of world map</label>
+        {% endif %}
+        {% if section.image != null %}
+          <img src="{{ section.image }}" alt="{{ section.image_description }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

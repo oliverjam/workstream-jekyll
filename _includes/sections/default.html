@@ -1,0 +1,27 @@
+{% capture id %}{{ section.id | remove:'/sections/' | downcase }}{% endcapture %}
+<section class="section" id="{{ id }}">
+  <div class="section__container">
+    <div class="grid">
+      <div class="grid__item">
+        <h2 class="section__title">{{ page.title }}</h2>
+        {{ content }}
+      </div>
+      <div class="grid__item u-center">
+        <div class="device__container">
+          <img src="{{ page.mac_img }}" alt="{{ page.mac_img_description }}">
+          <figure class="iphone">
+            <div class="iphone__speaker">
+              <div class="iphone__speaker--circle"></div>
+              <div class="iphone__speaker--line"></div>
+            </div>
+            <div class="iphone__screen">
+              <video src="{{ page.iphone_vid}}" id="iphone-video" autoplay muted loop></video>
+              <label class="u-vh" for="iphone-video">{{ page.iphone_vid_description }}</label>
+            </div>
+            <div class="iphone__button"></div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
