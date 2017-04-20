@@ -3,7 +3,7 @@ title: A complete hub at your fingertips.
 date: 2017-04-19 01:48:00 Z
 position: 2
 include: sections/devices.html
-image: "/uploads/imac-9550e9.png"
+image: "/uploads/imac.png"
 image_alt: iMac with screenshot of Workstream X
 video_asset: vid/wsx-video-mobile.mp4
 video_alt: Video of Workstream X dashboard on an iPhone
