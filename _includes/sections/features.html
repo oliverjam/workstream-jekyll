@@ -13,8 +13,8 @@
           {% for feature in features %}
             <div class="grid__item grid__item--half">
               <label class="gallery__label" for="gallery{{ feature.position }}">
-                <video src="{{ feature.video }}" autoplay muted loop class="gallery__image" id="galleryImg{{ feature.position }}"></video>
-                <label class="u-vh" for="galleryImg{{ feature.position }}">{{ feature.video_description }}</label>
+                <video src="{{ feature.video_asset }}" autoplay muted loop class="gallery__image" id="galleryImg{{ feature.position }}"></video>
+                <label class="u-vh" for="galleryImg{{ feature.position }}">{{ feature.video_alt }}</label>
               </label>
             </div>
           {% endfor %}
