@@ -5,7 +5,7 @@ position: 2
 include: sections/devices.html
 image: "/uploads/imac.png"
 image_alt: iMac with screenshot of Workstream X
-video_asset: vid/wsx-video-mobile.mp4
+video_asset: uploads/wsx-video-mobile.mp4
 video_alt: Video of Workstream X dashboard on an iPhone
 ---
 

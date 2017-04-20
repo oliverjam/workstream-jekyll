@@ -2,7 +2,7 @@
 title: Digital asset management.
 date: 2017-04-19 01:48:00 Z
 position: 4
-video_asset: vid/in-store-ordering.mp4
+video_asset: uploads/in-store-ordering.mp4
 video_description: Video of Workstream X in-store ordering
 ---
 
