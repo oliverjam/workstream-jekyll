@@ -1,11 +1,11 @@
 ---
 title: Used by giants.
-date: 2017-04-19 01:48:18.058000000 Z
+date: 2017-04-19 01:48:00 Z
 position: 4
+include: sections/generic.html
 video: vid/map.mp4
 image: 
 video_description: Video of world map with blinking dots all over the world
-include: sections/generic.html
 ---
 
 Our system is already used by some of the world’s largest retailers and brands. We have over 5,500 users across 72 countries.
