@@ -7,12 +7,12 @@
         {{ section.content }}
       </div>
       <div class="grid__item u-center">
-        {% if section.video != null %}
-          <video src="{{ section.video }}" autoplay muted loop  id="mapVid"></video>
+        {% if section.video_asset != null %}
+          <video src="{{ section.video_asset }}" autoplay muted loop  id="mapVid"></video>
           <label class="u-vh" for="mapVid">Video of world map</label>
         {% endif %}
         {% if section.image != null %}
-          <img src="{{ section.image }}" alt="{{ section.image_description }}">
+          <img src="{{ section.image }}" alt="{{ section.image_alt }}">
         {% endif %}
       </div>
     </div>

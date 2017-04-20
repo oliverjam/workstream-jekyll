@@ -21,22 +21,22 @@ defaults:
   values:
     title: ''
     include: ''
-    position: 
+    position:
 - scope:
     path: ''
     type: features
   values:
     title: ''
     video: ''
-    video_description: ''
-    position: 
+    video_alt: ''
+    position:
 email: your-email@domain.com
 description: 'Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 
 '
-url: 
+url:
 google_analytics: UA-24138326-8
 scroll_speed: 400
 sass:
