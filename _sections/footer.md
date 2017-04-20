@@ -1,9 +1,9 @@
 ---
 title: Footer
-date: 2017-04-19 01:48:18.058000000 Z
+date: 2017-04-19 01:48:00 Z
 position: 6
-image: img/swircle-ondark.svg
 include: sections/footer.html
+image: img/swircle-ondark.svg
 ---
 
 Workstream X is brought to you by The Delta Group
